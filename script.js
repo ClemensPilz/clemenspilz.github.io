@@ -1,4 +1,4 @@
-window.addEventListener('load', init);
+document.addEventListener("DOMContentLoaded", init);
 
 function init() {
 
@@ -7,4 +7,5 @@ function init() {
         button.addEventListener('click', () => alert('clicked!'));
 
 
-}}
+    }
+}
