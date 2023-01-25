@@ -1,0 +1,126 @@
+@import 'mixins.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  background-color: #ededed;
+  font-family: Inter, sans-serif;
+}
+
+body {
+
+  background-color: white;
+  width: 100%;
+  min-height: 100vh;
+
+  @include md {
+    width: 768px;
+    margin: auto;
+  }
+
+  /*  @include lg {
+      width: 1200px;
+    }*/
+
+}
+
+.pageSection {
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  padding-top: 2rem;
+
+
+  &-white {
+    background-color: white;
+    color: black;
+  }
+
+  &-main {
+    background-color: $main;
+  }
+
+  &-dark {
+    background-color: $bgc;
+    color: white;
+  }
+
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 500;
+
+  &-xl {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  &-l {
+    font-size:1.5rem;
+  }
+
+  &-sm {
+    font-size: .8rem;
+    font-weight: 300;
+  }
+
+  &-main {
+    color: $main;
+  }
+
+  &-sec {
+    color: $sec;
+  }
+
+  &-black {
+    color:black;
+  }
+
+  &-white {
+    color: white;
+  }
+}
+
+.gitLogo {
+  margin-left: auto;
+  height: 3rem;
+}
+
+li {
+  list-style: none;
+  padding: .5rem;
+  margin: .8rem;
+  max-width: 500px;
+  background-color: $bgc;
+  color: $main;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 5px -5px white;
+ /* &:nth-child(2n) {
+    background-color: $bgcl;
+  }*/
+  &:nth-child(1) {
+    margin-top: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    box-shadow: 5px -5px $main;
+  }
+}
+
+

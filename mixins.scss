@@ -1,0 +1,16 @@
+@mixin md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+$main: #ff16a2;
+$sec: #b8ff21;
+$bgc: black;
+$bgcl: #6c868e;
