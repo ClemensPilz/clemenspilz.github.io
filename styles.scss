@@ -1,5 +1,7 @@
 @import 'mixins.scss';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
+
 
 * {
   box-sizing: border-box;
@@ -8,7 +10,7 @@
 html {
   width: 100vw;
   background-color: #ededed;
-  font-family: Inter, sans-serif;
+  font-family: Comfortaa, sans-serif;
 }
 
 body {
@@ -44,6 +46,10 @@ body {
     background-color: $main;
   }
 
+&-sec {
+  background-color: $sec;
+}
+
   &-dark {
     background-color: $bgc;
     color: white;
@@ -66,7 +72,7 @@ body {
   }
 
   &-l {
-    font-size:1.5rem;
+    font-size: 1.5rem;
   }
 
   &-sm {
@@ -83,7 +89,7 @@ body {
   }
 
   &-black {
-    color:black;
+    color: black;
   }
 
   &-white {
@@ -100,15 +106,15 @@ li {
   list-style: none;
   padding: .5rem;
   margin: .8rem;
-  max-width: 500px;
+  /*  max-width: 500px;*/
   background-color: $bgc;
   color: $main;
   font-weight: 500;
-  border-radius: 5px;
-  box-shadow: 5px -5px white;
- /* &:nth-child(2n) {
-    background-color: $bgcl;
-  }*/
+  /*  border-radius: 5px;*/
+  /*  box-shadow: -5px 5px $sec;*/
+  /* &:nth-child(2n) {
+     background-color: $bgcl;
+   }*/
   &:nth-child(1) {
     margin-top: 2rem;
   }
@@ -118,9 +124,17 @@ li {
     color: inherit;
   }
 
-  &:hover {
-    box-shadow: 5px -5px $main;
+
+  * {
+    padding: .5rem;
+    border-left: .5rem solid $sec;
+
+    &:hover {
+
+      border-left: .5rem solid $main;
+    }
   }
+
 }
 
 

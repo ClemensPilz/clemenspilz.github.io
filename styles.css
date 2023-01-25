@@ -1,4 +1,11 @@
+/*
+$main: #ff16a2;
+$sec: #ffa0d9;
+$bgc: black;
+$bgcl: #6c868e;
+$bgcl: #6c868e;*/
 @import 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css';
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -6,7 +13,7 @@
 html {
   width: 100vw;
   background-color: #ededed;
-  font-family: Inter, sans-serif;
+  font-family: Comfortaa, sans-serif;
 }
 
 body {
@@ -35,7 +42,10 @@ body {
   color: black;
 }
 .pageSection-main {
-  background-color: #ff16a2;
+  background-color: #00ce0d;
+}
+.pageSection-sec {
+  background-color: #afeab3;
 }
 .pageSection-dark {
   background-color: black;
@@ -63,10 +73,10 @@ body {
   font-weight: 300;
 }
 .text-main {
-  color: #ff16a2;
+  color: #00ce0d;
 }
 .text-sec {
-  color: #b8ff21;
+  color: #afeab3;
 }
 .text-black {
   color: black;
@@ -84,12 +94,12 @@ li {
   list-style: none;
   padding: 0.5rem;
   margin: 0.8rem;
-  max-width: 500px;
+  /*  max-width: 500px;*/
   background-color: black;
-  color: #ff16a2;
+  color: #00ce0d;
   font-weight: 500;
-  border-radius: 5px;
-  box-shadow: 5px -5px white;
+  /*  border-radius: 5px;*/
+  /*  box-shadow: -5px 5px $sec;*/
   /* &:nth-child(2n) {
      background-color: $bgcl;
    }*/
@@ -101,8 +111,12 @@ li a {
   text-decoration: none;
   color: inherit;
 }
-li:hover {
-  box-shadow: 5px -5px #ff16a2;
+li * {
+  padding: 0.5rem;
+  border-left: 0.5rem solid #afeab3;
+}
+li *:hover {
+  border-left: 0.5rem solid #00ce0d;
 }
 
 /*# sourceMappingURL=styles.css.map */
