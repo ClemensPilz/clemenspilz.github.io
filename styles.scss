@@ -46,9 +46,9 @@ body {
     background-color: $main;
   }
 
-&-sec {
-  background-color: $sec;
-}
+  &-sec {
+    background-color: $sec;
+  }
 
   &-dark {
     background-color: $bgc;
@@ -100,16 +100,27 @@ body {
 .gitLogo {
   margin-left: auto;
   height: 3rem;
+
+  img {
+    max-height: 100%;
+    transform: rotate(-90deg) translateX(-100%) scale(300%);
+
+    @include sm {
+      transform: scale(100%);
+    }
+  }
+
 }
 
 li {
   list-style: none;
   padding: .5rem;
-  margin: .8rem;
+  margin: .4rem;
   /*  max-width: 500px;*/
   background-color: $bgc;
   color: $main;
-  font-weight: 500;
+  font-weight: 400;
+  font-size: .8rem;
   /*  border-radius: 5px;*/
   /*  box-shadow: -5px 5px $sec;*/
   /* &:nth-child(2n) {

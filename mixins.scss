@@ -1,3 +1,9 @@
+@mixin sm {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
 @mixin md {
   @media (min-width: 768px) {
     @content;
@@ -13,3 +19,4 @@
 $main: #c4e8df;
 $sec: #38e8be;
 $bgc: black;
+$mainDark: #0be8b3;
